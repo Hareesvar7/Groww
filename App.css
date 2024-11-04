@@ -1,0 +1,53 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.dashboard {
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary-item h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.summary-item p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.holdings-list {
+  margin-top: 20px;
+}
+
+.holding-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.holding-details h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.holding-values p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.holding-values p:last-child {
+  font-weight: bold;
+}
