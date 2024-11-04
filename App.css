@@ -1,148 +1,117 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* styles.css */
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
 }
 
-/* App Container */
 .app-container {
-  max-width: 480px;
-  margin: auto;
   padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid #e0e0e0;
 }
 
-.header .logo {
-  font-size: 24px;
+.logo {
   font-weight: bold;
-  color: #1a73e8;
+  font-size: 18px;
 }
 
-.header .profile-pic {
-  width: 40px;
-  height: 40px;
+.profile-pic {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: #ddd;
+  background-color: #ccc;
 }
 
-/* Investment Summary */
 .investment-summary {
   display: flex;
-  justify-content: space-between;
-  padding: 15px 0;
-  border-bottom: 1px solid #e0e0e0;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.investment-summary div {
-  text-align: center;
-}
-
-.investment-summary .amount {
-  font-size: 20px;
+.amount {
+  font-size: 18px;
   font-weight: bold;
 }
 
-.investment-summary .label {
-  font-size: 12px;
-  color: #757575;
+.label {
+  font-size: 14px;
+  color: #888;
 }
 
-/* Holdings List */
+.green {
+  color: #4caf50;
+}
+
+.red {
+  color: #f44336;
+}
+
 .holdings-list {
-  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .holding-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
 }
 
-.holding-item:last-child {
-  border-bottom: none;
+.details {
+  display: flex;
+  flex-direction: column;
 }
 
-.holding-item .details {
-  flex: 1;
-}
-
-.holding-item .details .name {
+.name {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
 }
 
-.holding-item .details .shares {
+.shares {
   font-size: 12px;
-  color: #757575;
+  color: #888;
 }
 
-.holding-item .amount {
+.amount {
   text-align: right;
 }
 
-.holding-item .current-value {
+.current-value {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
 }
 
-.holding-item .invested-value {
+.invested-value {
   font-size: 12px;
-  color: #757575;
+  color: #888;
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
-  .app-container {
-    padding: 15px;
-  }
+.graph {
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
 
-  .header .logo {
-    font-size: 20px;
-  }
+.up-graph {
+  background-image: url('path/to/up-graph-icon.png');
+}
 
-  .header .profile-pic {
-    width: 35px;
-    height: 35px;
-  }
-
-  .investment-summary .amount {
-    font-size: 18px;
-  }
-
-  .investment-summary .label {
-    font-size: 11px;
-  }
-
-  .holding-item .details .name {
-    font-size: 14px;
-  }
-
-  .holding-item .details .shares,
-  .holding-item .invested-value {
-    font-size: 11px;
-  }
-
-  .holding-item .current-value {
-    font-size: 14px;
-  }
+.down-graph {
+  background-image: url('path/to/down-graph-icon.png');
 }
